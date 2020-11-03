@@ -1,3 +1,232 @@
-body {
+/*#00ff80,00cc66*/
+
+/* home */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+/* body{
+    min-height: 1000px;
+} */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/alziyara-bg-home.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 3.3em;
+    color: #fff;
+    font-weight: 800;
+}
+.banner .content p{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1rem;
+}
+.btn-cu{
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background: #00cc66;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* transition: 0.5s; */
+    /* text-transform: uppercase; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-cu:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #00cc66;
+    letter-spacing: 2px;
+    transition-duration: 1s;
+    transition: .7s;
+}
+
+.btn-lm{
+    border: 2px solid black;
+    font-size: 1em;
+    font-weight: 600;
+    color: #00cc66;
+    border-color: #00cc66;
+    background: none;
+    display: inline-block;
+    padding: 3px 13px;
+    margin-top: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* transition: 0.5s; */
+    /* text-transform: uppercase; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-lm:hover{
+    text-decoration: none;
+    /* background: #fff; */
+    color: #fff;
+    border-color: #fff;
+    letter-spacing: 2px;
+    transition-duration: 1s;
+    transition: .7s;
+}
+/* home */
+
+/* navbar */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color: #fff;
+    font-weight: 800;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo:hover{
+    color: #00cc66;
+    transition-duration: .5s;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo span{
+    color: #00cc66;
+
+}
+header .navigation{
+    position: relative;
+    display: flex;
+
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+header .navigation li a:hover{
+    color: #00cc66;
+    transition-duration: .5s;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header.sticky .navigation li a:hover{
+    color: #00cc66;
+}
+/* navbar */
+
+
+@media (max-width : 991px){
+    .banner{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(Images/alziyara-bg-home-mobile.jpg);
+        background-size: cover;
+    }
+    .banner .content h2{
+        font-size: 2.3em;
+        color: #fff;
+        font-weight: 800;
+    }
+    .banner .content p {
+        font-size: .8em;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    .btn-cu{
+        margin-top: 10px;
+    }
+    header,
+    header.sticky{
+        padding: 15px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(Images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(Images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
 }
