@@ -1,22 +1,25 @@
 /*#00ff80,00cc66*/
 
+
 /* home */
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-p{
+
+p {
     font-weight: 300;
     color: #111;
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -26,22 +29,26 @@ p{
     background: url(Images/alziyara-bg-home.jpg);
     background-size: cover;
 }
-.banner .content{
+
+.banner .content {
     max-width: 900px;
     text-align: center;
 }
-.banner .content h2{
+
+.banner .content h2 {
     font-size: 3.3em;
     color: #fff;
     font-weight: 800;
 }
-.banner .content p{
+
+.banner .content p {
     font-size: 1em;
     font-weight: 500;
     color: #fff;
     margin-top: 1rem;
 }
-.btn-cu{
+
+.btn-cu {
     font-size: 1em;
     font-weight: 600;
     color: #fff;
@@ -56,7 +63,8 @@ p{
     border-radius: 20px;
     cursor: pointer;
 }
-.btn-cu:hover{
+
+.btn-cu:hover {
     text-decoration: none;
     background: #fff;
     color: #00cc66;
@@ -65,7 +73,7 @@ p{
     transition: .7s;
 }
 
-.btn-lm{
+.btn-lm {
     border: 2px solid black;
     font-size: 1em;
     font-weight: 600;
@@ -82,7 +90,8 @@ p{
     border-radius: 20px;
     cursor: pointer;
 }
-.btn-lm:hover{
+
+.btn-lm:hover {
     text-decoration: none;
     /* background: #fff; */
     color: #fff;
@@ -91,11 +100,14 @@ p{
     transition-duration: 1s;
     transition: .7s;
 }
+
+
 /* home */
+
 
 /* navbar */
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -107,57 +119,178 @@ header{
     align-items: center;
     transition: 0.5s;
 }
-header.sticky{
+
+header.sticky {
     background: #fff;
     padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-header .logo{
+
+header .logo {
     color: #fff;
     font-weight: 800;
     font-size: 2em;
     text-decoration: none;
 }
-header .logo:hover{
+
+header .logo:hover {
     color: #00cc66;
     transition-duration: .5s;
 }
-header.sticky .logo{
+
+header.sticky .logo {
     color: #111;
 }
-header .logo span{
-    color: #00cc66;
 
+header .logo span {
+    color: #00cc66;
 }
-header .navigation{
+
+header .navigation {
     position: relative;
     display: flex;
-
 }
-header .navigation li{
+
+header .navigation li {
     list-style: none;
     margin-left: 30px;
 }
-header .navigation li a{
+
+header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
 }
-header .navigation li a:hover{
+
+header .navigation li a:hover {
     color: #00cc66;
     transition-duration: .5s;
 }
-header.sticky .navigation li a{
+
+header.sticky .navigation li a {
     color: #111;
 }
-header.sticky .navigation li a:hover{
+
+header.sticky .navigation li a:hover {
     color: #00cc66;
 }
+
+
 /* navbar */
 
 
-@media (max-width : 991px){
-    .banner{
+/* counter */
+
+.counter-section {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+}
+
+.counter-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.89);
+}
+
+.count-items {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 100%;
+}
+
+.count-items:hover.count-items i {
+    color: #00cc66;
+}
+
+.count-items:hover.count-items h2 {
+    color: #00cc66;
+}
+
+.count-items i {
+    color: #00cc66;
+    font-size: 36px;
+}
+
+.count-items span {
+    color: #00cc66;
+    font-size: 36px;
+    padding: 20px 0px;
+    display: inherit;
+    font-weight: 700;
+}
+
+.count-items h2 {
+    font-size: 20px;
+    color: #00cc66;
+}
+
+
+/* .funfact {
+    margin-top: 50px;
+    text-align: right;
+  }
+  
+  .funfact h2 {
+      color: #ffaf53;
+      font-size: 42px;
+      font-weight: 700;
+      position: relative;
+  
+  }
+  .funfact h2:after {
+  position: absolute;
+  content: "";
+  width: 115px;
+  height: 2px;
+  background:#fff;
+  right: 0px;
+  bottom: -24px;
+  
+  
+  }
+  .funfact p {
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 50px;
+    color: #e1e1e1;
+  } */
+
+a.site-btn.transition-ease.quote-btn {
+    padding: 14px 28px;
+    background: #f35b68;
+}
+
+.site-btn.header-quote-btn:hover {
+    background: transparent;
+    color: #252525;
+}
+
+.site-btn.header-quote-btn {
+    padding: 14px 28px;
+    background: #f35b68;
+    background: linear-gradient(to right, #f35b68, #ffaf53);
+    margin-left: 20px;
+    text-transform: capitalize;
+    background-origin: border-box;
+}
+
+#marquee-container {
+    padding: 20px 0px;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+
+/* counter */
+
+@media (max-width: 991px) {
+    .banner {
         position: relative;
         width: 100%;
         min-height: 100vh;
@@ -167,7 +300,7 @@ header.sticky .navigation li a:hover{
         background: url(Images/alziyara-bg-home-mobile.jpg);
         background-size: cover;
     }
-    .banner .content h2{
+    .banner .content h2 {
         font-size: 2.3em;
         color: #fff;
         font-weight: 800;
@@ -178,17 +311,17 @@ header.sticky .navigation li a:hover{
         color: #fff;
         margin-top: 2rem;
     }
-    .btn-cu{
+    .btn-cu {
         margin-top: 10px;
     }
     header,
-    header.sticky{
+    header.sticky {
         padding: 15px 20px;
     }
-    header .navigation{
+    header .navigation {
         display: none;
     }
-    header .navigation.active{
+    header .navigation.active {
         width: 100%;
         height: calc(100% - 68px);
         position: fixed;
@@ -200,17 +333,16 @@ header.sticky .navigation li a:hover{
         flex-direction: column;
         background: #fff;
     }
-    header .navigation li{
+    header .navigation li {
         margin-left: 0;
     }
-    header .navigation li a{
+    header .navigation li a {
         text-decoration: none;
         color: #111;
         font-size: 1.6em;
         font-weight: 700;
     }
-
-    .menuToggle{
+    .menuToggle {
         position: relative;
         width: 40px;
         height: 40px;
@@ -220,14 +352,14 @@ header.sticky .navigation li a:hover{
         background-position: center;
         cursor: pointer;
     }
-    .menuToggle.active{
+    .menuToggle.active {
         background: url(Images/close.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
         transition: 0.3s;
     }
-    header.sticky .menuToggle{
+    header.sticky .menuToggle {
         filter: invert(1);
     }
 }
