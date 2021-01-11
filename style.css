@@ -164,7 +164,7 @@ header .navigation li a {
 
 header .navigation li a:hover {
     color: #00cc66;
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 
 header.sticky .navigation li a {
@@ -229,35 +229,6 @@ header.sticky .navigation li a:hover {
 }
 
 
-/* .funfact {
-    margin-top: 50px;
-    text-align: right;
-  }
-  
-  .funfact h2 {
-      color: #ffaf53;
-      font-size: 42px;
-      font-weight: 700;
-      position: relative;
-  
-  }
-  .funfact h2:after {
-  position: absolute;
-  content: "";
-  width: 115px;
-  height: 2px;
-  background:#fff;
-  right: 0px;
-  bottom: -24px;
-  
-  
-  }
-  .funfact p {
-    line-height: 24px;
-    font-size: 16px;
-    margin-top: 50px;
-    color: #e1e1e1;
-  } */
 
 a.site-btn.transition-ease.quote-btn {
     padding: 14px 28px;
